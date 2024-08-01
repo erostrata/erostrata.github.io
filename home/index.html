@@ -35,6 +35,11 @@
         media="none" id="highlight_theme_dark" />
     <script src="/assets/js/theme.js"></script>
     <script src="/assets/js/dark_mode.js"></script>
+    <style>
+        .nav-item .active {
+            color: purple !important;
+        }
+    </style>
 </head>
 
 <body class="fixed-top-nav">
@@ -63,16 +68,16 @@
                 </button>
                 <div class="collapse navbar-collapse text-right" id="navbarNav">
                     <ul class="navbar-nav ml-auto flex-nowrap">
-                        <li class="nav-item active">
+                        <li class="nav-item" id="home-link">
                             <a class="nav-link" href="/">home<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item" id="about-link">
                             <a class="nav-link" href="/about/">about</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="blog-link">
                             <a class="nav-link" href="/blog/">blog</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="projects-link">
                             <a class="nav-link" href="/projects/">projects</a>
                         </li>
                         <div class="toggle-container">
@@ -202,6 +207,19 @@
     <script defer type="text/javascript" id="MathJax-script"
         src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
     <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll('#navbarNav .nav-link');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
