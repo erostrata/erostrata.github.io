@@ -56,23 +56,24 @@
         background-color: #ffffff;
     }
 
-    /* Updated CSS to increase the size of the profile picture and add more margin */
+    .profile figure {
+    width: 20%; /* Controls the width of the image and figcaption */
+    margin-right: auto;
+    margin-left: auto; /* Centers the figure in the parent element */
+    text-align: center; /* Centers the image and text horizontally */
+    }
+
     .profile img {
-        width: 20%;
-        /* Doubled the size from 10% to 20% */
-        float: left;
-        margin-right: 40px;
-        /* Doubled the margin from 20px to 40px */
-        margin-bottom: 40px;
-        /* Added bottom margin for cleaner text wrapping */
+    width: 100%; /* Ensures the image uses the full width of the figure */
+    display: block; /* Removes the need for float and fixes alignment issues */
+    margin-bottom: 8px; /* Spacing between the image and the caption */
     }
 
     .profile figcaption {
     font-size: 0.8rem; /* Smaller font size for the caption */
     color: #6c757d; /* A mild grey color */
-    text-align: center; /* Center-align the text */
-    margin-top: 8px; /* Spacing between the image and the caption */
     }
+
 
 
     /* Updated CSS for larger side margins on the page */
