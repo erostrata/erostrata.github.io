@@ -64,14 +64,14 @@
             margin-right: 20px;
         }
 
-        /* CSS for equal margins */
+        /* CSS for centering the content */
         .content-container {
-            margin-left: 300px;
-            margin-right: 300px;
-            max-width: 800px;
-            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             margin-top: 100px;
-            /* Added margin-top to move content down */
+            padding: 0 20px;
         }
 
         /* CSS for consistent text size */
@@ -143,18 +143,18 @@
                 </div>
             </header>
             <article>
-                <div class="clearfix">
+                <div class="clearfix text-center">
                     <p>I'm a creative developer studying data science and applied math at UC Berkeley.</p>
                     <p>I am currently working at Channel AI as a Machine Learning Engineer Intern.</p>
                     <p>I have 3 years of experience in fast-paced environments and startups.</p>
                     <p>I love learning new things and it's nice to meet you!</p>
-                    <ul>
+                    <ul class="list-unstyled">
                         <li>Contact me at <b>emilyrostrata@berkeley.edu</b>.</li>
                     </ul>
                 </div>
                 <!-- News -->
                 <div class="news">
-                    <h2>recent projects </h2>
+                    <h2 class="text-center">recent projects</h2>
                     <div class="table-responsive">
                         <table class="table table-sm table-borderless">
                             <tr>
@@ -165,8 +165,7 @@
                             <tr>
                                 <th scope="row">Mar 21, 2022</th>
                                 <td>I created my <a href="https://youtu.be/-UJJm_VMSdU" target="_blank"
-                                        rel="noopener noreferrer">first
-                                        YouTube short!</a></td>
+                                        rel="noopener noreferrer">first YouTube short!</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">Mar 10, 2022</th>
