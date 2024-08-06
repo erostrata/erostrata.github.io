@@ -63,6 +63,23 @@
       float: left;
       margin-right: 20px;
     }
+
+    /* CSS for equal margins */
+    .content-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    /* CSS for consistent text size */
+    .post p,
+    .post ul,
+    .post h2,
+    .post table {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -110,7 +127,7 @@
     </nav>
   </header>
   <!-- Content -->
-  <div class="container mt-5">
+  <div class="content-container mt-5">
     <div class="post">
       <header class="post-header">
         <div class="profile">
@@ -120,7 +137,6 @@
             </picture>
           </figure>
         </div>
-        <h1 class="post-title"><span class="font-weight-bold">Hi, I'm Emily!</span></h1>
       </header>
       <article>
         <div class="clearfix">
