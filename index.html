@@ -119,6 +119,15 @@
     color: #c7a5c8; /* Optional: change on hover */
     text-decoration: none; /* Optional: remove underline on hover */
     }
+    #projects-table a {
+    color: #a883a9; /* Change this color to whatever you want */
+    text-decoration: underline;
+    }
+
+    #projects-table a:hover {
+    color: #000000; /* Change this color for hover effect */
+    text-decoration: none; /* Optional: removes underline on hover */
+    }
 
 
   </style>
@@ -193,7 +202,7 @@
     <div class="news">
       <h6>some of my recent projects</h6>
       <div class="table-responsive">
-        <table class="table table-sm table-borderless">
+        <table class="table table-sm table-borderless" id="projects-table">
           <tr>
             <th scope="row">
               <a href="https://github.com/erostrata/how-im-feeling" target="_blank"
